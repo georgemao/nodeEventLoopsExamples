@@ -1,6 +1,5 @@
 'use strict';
 
-
 var async = require("async");
 
 exports.handler = (event, context, callback) => {
