@@ -2,7 +2,7 @@
 
 
 ## Introduction
-NodeJS utilizes an asynchronous programming model, via the Event Loop. However, sometimes it is necessary to invoke operations in sequence or parallel. This sample makes use of the [async](https://caolan.github.io/async/) library.
+NodeJS utilizes an asynchronous programming model, via the Event Loop. However, sometimes it is necessary to invoke operations synchronously in sequence or parallel. This sample makes use of the [async](https://caolan.github.io/async/) library.
 
 ## Example
 
