@@ -1,0 +1,15 @@
+{
+  "name": "nodeventloopexamples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "asyncTests.js",
+  "dependencies": {
+    "async": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

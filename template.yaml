@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: A hello world application.
+
+Resources:
+
+  AsyncTest:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: asyncTests.handler
+      Runtime: nodejs6.10
+      Tracing: Active
+      Timeout: 10
+      Environment:
+        Variables:
+          _X_AMZN_TRACE_ID: Root=1-59b964c7-0fecbfc707665322a54d7119
+          AWS_XRAY_DAEMON_ADDRESS: 127.0.0.1:2000
+          TESTVAR: works1
