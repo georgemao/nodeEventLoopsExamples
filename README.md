@@ -13,7 +13,9 @@ var url = docClient.query(params).promise();
 ```
 
 ```node
-url.then();
+url.then(function (someResult){
+    // Do something here
+});
 ```
 
 Second, is by using a 3rd party library  [async](https://caolan.github.io/async/). This library allows calls occur in series, parallel, or waterfall mode by issuing Callbacks. A fully functional examle is show in **asyncTests.js**
