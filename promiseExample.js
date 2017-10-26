@@ -1,3 +1,8 @@
+// This example demostrates how to use Promises to coordinate multiple Async API calls together
+// It queries DDB for a URL
+// Uses the URL to perform a HTTPS Get
+// Uploads the result to S3
+
 'use strict'
 
 var AWS = require("aws-sdk");
