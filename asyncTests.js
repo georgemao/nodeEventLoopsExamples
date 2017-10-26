@@ -17,8 +17,8 @@ exports.handler = (event, context, callback) => {
 	],
 	function(err, results){
 		console.log(results);
-		
-	});
+		}
+	);
 
 	// Waterfall the result of each function to the next
 	async.waterfall([
