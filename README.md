@@ -22,20 +22,21 @@ Second, is by using a 3rd party library  [async](https://caolan.github.io/async/
 
 ```node
 async.series([
-	function(callback){
-		console.log('ji');
+    function(callback){
+        console.log('ji');
         callback(null, 'one');
-	},
+    },
     function(callback){
         console.log('adsf');
-		callback(null, 'two');
-	}],
-	function(err, results){
-		console.log(results);
-	}
+        callback(null, 'two');
+    }],
+    function(err, results){
+        console.log(results);
+    }
 );
 ```
 
 ## Resources
 
-- **asyncTests.js** - NodeJS Based Lambda function demostrates how to control the Event loop
+- **asyncTests.js** - NodeJS Based Lambda function demostrates how to use Callbacks to control the Event loop
+- **promiseExample.js** - NodeJS Based Lambda function demostrates how to use Promises to control the Event loop
