@@ -16,3 +16,10 @@ Resources:
           _X_AMZN_TRACE_ID: Root=1-59b964c7-0fecbfc707665322a54d7119
           AWS_XRAY_DAEMON_ADDRESS: 127.0.0.1:2000
           TESTVAR: works1
+
+  promiseTest:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: promiseExample.handler
+      Runtime: nodejs6.10
+      Timeout: 10
