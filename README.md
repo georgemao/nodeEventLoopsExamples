@@ -4,6 +4,13 @@
 ## Introduction
 NodeJS utilizes an asynchronous programming model, via the Event Loop. However, sometimes it is necessary to invoke operations synchronously in sequence or parallel. This sample demostrates two approaches to this.
 
+This project is [SAM](https://github.com/awslabs/aws-sam-local/) enabled! Just run it like this:
+
+```bash
+sam local invoke AsyncTest -e "event.json"
+sam local invoke promiseTest -e "event.json"
+```
+
 ## A Promise Example
 First, is by issuing Promises and fullfilling them when the Async calls complete. A fully functional example is shown in **promiseExample.js**.
 Instead of issuing callbacks, we create a Promise then call the .then() operator when the promise is ready.
